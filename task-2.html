@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-1{
+            background-color: rgb(254, 26, 79);
+            grid-row: span 2;
+            padding: 30px;
+        }
+        .box-2{
+            background-color: rgb(26, 254, 87);
+            grid-column: span 2;
+            padding: 30px;
+        }
+        .box-3{
+            background-color: rgb(179, 15, 140);
+            padding: 30px;
+        }
+        .box-4{
+            background-color: rgb(237, 121, 58);
+            padding: 30px;
+        }
+        .boxs{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+    
+        }
+        /* small device media query*/
+        @media screen and (max-width: 576px){
+            .boxs{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .box-1{
+                grid-column: span 3;
+            }
+            .box-2{
+                grid-column: span 3;
+            }
+            .box-3{
+                grid-column: span 3;
+            }
+            .box-4{
+                grid-column: span 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="boxs">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+        <div class="box-4">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            border: 3px solid green;
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 100px 200px 100px ; */
+            grid-template-columns: auto 300px 200px;
+            /* grid-template-columns: repeat(2, 500px); */
+            /* grid-template-columns: repeat(2, 100px) 300px 400px; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: repeat(3, 1fr) 2fr; */
+            justify-content: center;
+        }
+    </style>
+    <!-- 1fr mane same jayga nibe 2fr mane dabol jayga nibe -->
+</head>
+<body>
+    <section class="container">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+    </section>
+</body>
+</html>
